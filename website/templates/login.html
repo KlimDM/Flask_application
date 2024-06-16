@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Вход{%  endblock %}
+{% block style %}
+    body {
+    background-image: url("static/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+{% endblock %}
+{% block content %}
+    <form method="post">
+        <h3 style="text-align: center">Вход</h3>
+        <div class="form-group">
+            <label for="email">Электронная почта</label>
+            <input type="email" class="form-control" id="email" name="email"
+                   placeholder="Введите электронную почту"/>
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль</label>
+            <input type="password" class="form-control" id="password" name="password"
+                   placeholder="Введите пароль"/>
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-primary">Войти</button>
+    </form>
+{% endblock %}
